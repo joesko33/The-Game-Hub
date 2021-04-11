@@ -9,18 +9,16 @@ header {
   margin-top: 5px;
 }
 
-.hamburger-label {
-  /*
+#hamburger-menu {
+  display: none;
+}
+
+label[for="hamburger-menu"] {
   float: right;
-  */
-  color: #fff;
+  color: #000;
   padding: 10px;
   font-size: 1.5em;
   display: block;
-}
-
-nav {
-  display: none;
 }
 
 nav ul {
@@ -49,14 +47,13 @@ nav a:hover {
 .current {
   font-weight: bold;
 }
-/*
-#hamburger-menu {
-  display: none;
-}
-*/
+
+/* #hamburger-menu {
+    display: none;
+  } */
 
 #hamburger-menu:checked ~ nav {
-  display: block;
+  display: none;
 }
 
 @media (min-width: 600px) {
@@ -64,11 +61,6 @@ nav a:hover {
     float: left;
   }
   nav {
-    display: inline-block;
-  }
-
-  .hamburger-label {
-    display: none;
   }
 
   ul {

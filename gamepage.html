@@ -5,30 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="flex-container">
+  <header>
+    <nav id="navbar">
+      <div class="container">
+        <img src="assets/GameHub_Logo.png" alt="Game Hub logo" class="logo"/>
+        <label for="hamburger-menu" class="hamburger-label">
+          <i class="fas fa-bars"></i>
+        </label>
+        <input type="checkbox" id="hamburger-menu">
+        <ul>
+          <li><a class="current" href="index.html">Home</a></li>
+          <li><a href="gamepage.html">Gamepage</a></li>
+          <li><a href="accountpage.html">Accountpage</a></li>
+          <li><a href="checkoutpage.html">Checkout</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>  
+  </header>
+    <div class="grid-container">
         <div class="cover cover-one">
           <img src="./img/GameHub_covers3.jpg" alt="" width="200px">
-        <h3>Black</h3>
+          <h3>Black</h3>
         </div>
         <div class="cover cover-two">
           <img src="./img/GameHub_covers4.jpg" alt="" width="200px">
-        <h3>cover two</h3>
+          <h3>cover two</h3>
         </div>
         <div class="cover cover-three">
           <img src="./img/GameHub_covers5.jpg" alt="" width="200px">
-        <h3>cover three</h3>
+          <h3>cover three</h3>
         </div>
         <div class="cover cover-five">
           <img src="./img/GameHub_covers7.jpg" alt="" width="200px">
-        <h3>cover two</h3>
+          <h3>cover two</h3>
         </div>
         <div class="cover cover-six">
           <img src="./img/GameHub_covers8.jpg" alt="" width="200px">
-        <h3>cover three</h3>
+          <h3>cover three</h3>
         </div>
         </div>
+  </header>      
     
 </body>
 </html>

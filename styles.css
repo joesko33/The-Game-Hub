@@ -30,6 +30,8 @@ nav ul {
 
 nav li {
   display: block;
+  font-family: "Roboto",sans-serif;
+  font-size: 22px;
 }
 
 nav a {
@@ -99,7 +101,13 @@ nav a:hover {
 }
 h1 {
   font-family: "Roboto";
+  font-size: 48px;
   text-shadow: black 2px;
+}
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  font-size: 32px;
 }
 body {
   background-color: #fdbd36;
@@ -113,14 +121,14 @@ body {
 .covers {
   display: flex;
   height: auto;
-  margin: 0 auto;
+  margin: 5px auto;
   flex-direction: column;
 }
 .covers img {
   margin: 0 200px 30px 20px;
   width: 300px;
-  padding: 10 px;
-  border-radius: 5px;
+  padding: 20 px;
+  border-radius: 20px;
 }
 body {
   padding: 5px;
@@ -136,24 +144,113 @@ main {
   background-image: url(./img/game_hub_02.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-x: -570px;
+  background-position-x: -440px;
 }
 footer {
   background: #0093d0;
   width: 100%;
   height: 150px;
+  padding: 0px 0px 0px 30px;
+}
+#footer-text {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding: 50px;
 }
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1fr;
-  /* grid-template-areas:
-    "game1 game2 game3"
-    "game4 game2 game3"; */
+
 }
-/* .conver-one {
-  grid-area: game3;
+ .form-group{
+  margin-bottom: 20px;
 }
-.cover-two {
-  grid-area: game4;
-} */
+#contact-form label{
+  display: block;
+  margin-bottom: 5px;
+}
+#contact-form input,
+#contact-form textarea{
+  width: 100%;
+  padding: 10px;
+  border: 1px #ddd solid;
+
+}
+.logo-bottom{
+  text-align: center;
+  width: 20%;
+  padding: 30px 20px;
+}
+.bgimage {
+  /*padding: 60px;*/
+  background-size: cover;
+  background-repeat: repeat-y;
+  padding 0px 0px 0px 0px;
+}
+p{
+  font-family: "Roboto",sans-serif;
+}
+.form-group{
+  padding: 20px;
+  margin: 20px;
+  height: 100px;
+  width: 200px;
+}
+#orderbutton{
+  width: 300px;
+  height: 150px;
+  font-family: "Roboto",sans-serif;
+  font-size: 25px;
+}
+h4{
+  font-family: "Roboto",sans-serif,'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+.profile{
+  font-size: 30px;
+  font-weight: bolder;
+  color: #162c2d;
+  padding: 300px;
+}
+.farfa-user-circle{
+  width: 200px;
+}
+#yourprofile{
+  font-size: 30px;
+  width: 100px;
+}
+/*Mobile*/
+@media only screen and (max-width: 600px) {
+  .covers {
+    size: 50%;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .cover {
+    padding: 20px;
+  }
+  main {
+    background-image: url(./img/game_hub_02.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -880px;
+  }
+  @media (min-width: 600px) {
+    #hamburger-menu {
+      display: none;
+    }
+
+    #navbar ul {
+      list-style: none;
+      float: right;
+      display: flex;
+    }
+  }
+  
+  
+
+ 
+}
+

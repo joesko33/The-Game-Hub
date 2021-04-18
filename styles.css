@@ -1,16 +1,19 @@
-header {
-  background: #fbbb31;
-  min-height: 100px;
-  max-height: 200px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
 .logo {
   max-width: 100px;
   margin-top: 5px;
 }
-
-#hamburger-menu {
-  display: none;
+header {
+  padding: 0px;
 }
 
 label[for="hamburger-menu"] {
@@ -27,6 +30,8 @@ nav ul {
 
 nav li {
   display: block;
+  font-family: "Roboto",sans-serif;
+  font-size: 22px;
 }
 
 nav a {
@@ -36,10 +41,6 @@ nav a {
   display: block;
 }
 
-.logo {
-  max-width: 100px;
-}
-
 nav a:hover {
   text-decoration: underline;
 }
@@ -47,32 +48,209 @@ nav a:hover {
 .current {
   font-weight: bold;
 }
-
-/* #hamburger-menu {
-    display: none;
-  } */
-
-#hamburger-menu:checked ~ nav {
+.container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container label,
+.container img {
+  width: 50%;
+}
+.container label {
+  margin-left: auto;
+  text-align: end;
+}
+#hamburger-menu {
   display: none;
 }
 
-@media (min-width: 600px) {
-  .logo {
-    float: left;
-  }
-  nav {
-  }
-
-  ul {
-    padding: 0px;
-    display: flex;
-  }
-
-  li {
-    display: inline-block;
-  }
-
-  nav a {
-    padding: 19% 40px;
-  }
+#hamburger-menu:checked + ul {
+  display: block;
 }
+#navbar {
+  margin: 5px 10px 0 10px;
+}
+#navbar a {
+  color: #fff;
+}
+
+#navbar ul {
+  list-style: none;
+  float: right;
+  display: none;
+}
+
+#navbar ul li {
+  float: left;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  padding: bottom 1px;
+  text-align: center;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+  background: #fdbd36;
+  color: #282a2b;
+  padding-bottom: 34px;
+}
+h1 {
+  font-family: "Roboto";
+  font-size: 48px;
+  text-shadow: black 2px;
+}
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  font-size: 32px;
+}
+body {
+  background-color: #fdbd36;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+}
+
+.covers {
+  display: flex;
+  height: auto;
+  margin: 5px auto;
+  flex-direction: column;
+}
+.covers img {
+  margin: 0 200px 30px 20px;
+  width: 300px;
+  padding: 20 px;
+  border-radius: 20px;
+}
+body {
+  padding: 5px;
+}
+section {
+  text-align: center;
+}
+h1,
+h2 {
+  margin: 20px;
+}
+main {
+  background-image: url(./img/game_hub_02.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: -440px;
+}
+footer {
+  background: #0093d0;
+  width: 100%;
+  height: 150px;
+  padding: 0px 0px 0px 30px;
+}
+#footer-text {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding: 50px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+
+}
+ .form-group{
+  margin-bottom: 20px;
+}
+#contact-form label{
+  display: block;
+  margin-bottom: 5px;
+}
+#contact-form input,
+#contact-form textarea{
+  width: 100%;
+  padding: 10px;
+  border: 1px #ddd solid;
+
+}
+.logo-bottom{
+  text-align: center;
+  width: 20%;
+  padding: 30px 20px;
+}
+.bgimage {
+  /*padding: 60px;*/
+  background-size: cover;
+  background-repeat: repeat-y;
+  padding 0px 0px 0px 0px;
+}
+p{
+  font-family: "Roboto",sans-serif;
+}
+.form-group{
+  padding: 20px;
+  margin: 20px;
+  height: 100px;
+  width: 200px;
+}
+#orderbutton{
+  width: 300px;
+  height: 150px;
+  font-family: "Roboto",sans-serif;
+  font-size: 25px;
+}
+h4{
+  font-family: "Roboto",sans-serif,'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+.profile{
+  font-size: 30px;
+  font-weight: bolder;
+  color: #162c2d;
+  padding: 300px;
+}
+.farfa-user-circle{
+  width: 200px;
+}
+#yourprofile{
+  font-size: 30px;
+  width: 100px;
+}
+/*Mobile*/
+@media only screen and (max-width: 600px) {
+  .covers {
+    size: 50%;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .cover {
+    padding: 20px;
+  }
+  main {
+    background-image: url(./img/game_hub_02.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -880px;
+  }
+  @media (min-width: 600px) {
+    #hamburger-menu {
+      display: none;
+    }
+
+    #navbar ul {
+      list-style: none;
+      float: right;
+      display: flex;
+    }
+  }
+  
+  
+
+ 
+}
+
